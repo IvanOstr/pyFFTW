@@ -45,13 +45,14 @@ The documentation can be found on
 
 ## Requirements (i.e. what it was designed for)
 
-- [Python](https://python.org) 2.7 or >= 3.4
+- [Python](https://python.org) 2.7 or >= 3.6 
 - [Numpy](https://www.numpy.org) >= 1.10.4  (lower versions *may* work)
 - [FFTW](https://www.fftw.org) >= 3.3 (lower versions *may* work) libraries for
   single, double, and long double precision in serial and multithreading
-  (pthreads or openMP) versions.
+  (pthreads or openMP) versions. 
 - [Cython](https://cython.org) >= 0.29
 
+Usage of 64 bit (both in FFTW and Python version) may be a must as 32 bit is not supported.
 (install these as much as possible with your preferred package manager).
 
 In practice, pyFFTW *may* work with older versions of these dependencies, but
